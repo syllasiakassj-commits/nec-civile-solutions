@@ -41,7 +41,7 @@ export const ChatWidget = () => {
       {!isOpen && (
         <Button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 z-50 rounded-full w-16 h-16 shadow-lg hover:shadow-xl transition-all duration-300 bg-corporate-blue hover:bg-corporate-blue-dark"
+          className="fixed bottom-6 right-20 z-50 rounded-full w-16 h-16 shadow-lg hover:shadow-xl transition-all duration-300 bg-corporate-blue hover:bg-corporate-blue-dark"
           size="icon"
         >
           <MessageCircle className="w-6 h-6 text-white" />
@@ -50,7 +50,7 @@ export const ChatWidget = () => {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-6 right-6 z-50 w-80 max-w-[calc(100vw-2rem)] h-96 bg-card border border-border rounded-lg shadow-corporate flex flex-col">
+        <div className="fixed bottom-6 right-20 z-50 w-80 max-w-[calc(100vw-2rem)] h-96 bg-card border border-border rounded-lg shadow-corporate flex flex-col">
           {/* Header */}
           <div className="bg-corporate-blue text-white p-4 rounded-t-lg flex items-center justify-between">
             <div>
